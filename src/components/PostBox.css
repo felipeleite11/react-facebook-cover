@@ -1,0 +1,25 @@
+#post-box form {
+    width: calc(64% - 30px);
+    min-height: 100px;
+    margin-top: 1rem;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+    padding: 15px;
+
+    margin-left: 18%;
+    display: flex;
+}
+
+#post-box form textarea {
+    border: none;
+    resize: none;
+    background: #f8f8f8;
+    padding: 10px;
+    font-family: Ubuntu, Roboto, Arial;
+    flex-grow: 30
+}
+
+#post-box form button {
+    flex-grow: 1;
+}

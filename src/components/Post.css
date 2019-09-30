@@ -1,0 +1,40 @@
+.post {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+    padding: .8rem;
+    margin-top: 1rem;
+}
+
+.post .owner {
+    display: flex;
+}
+
+.post .profile-image-container {
+    flex-grow: 1;
+}
+
+.post .profile {
+    width: 30px;
+    border-radius: 50%;
+}
+
+.post .identification {
+    flex-grow: 40;
+    display: flex;
+    flex-direction: column;
+}
+
+.post .name {
+    font-weight: 700;
+}
+
+.post .date {
+    font-size: 10px;
+    color: #d1d1d1;
+    margin-top: 2px;
+}
+
+hr {
+    border: solid .5px #f1f1f1;
+}

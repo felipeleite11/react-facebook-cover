@@ -1,0 +1,19 @@
+html, 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f2f2f2;
+    color: #2c2c2c;
+    font-family: Ubuntu, Roboto, Arial;
+    font-size: 13px;
+    margin-bottom: 1.2rem;
+}
+
+/* #teste {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+} */

@@ -1,0 +1,31 @@
+.comment {
+    font-size: 12px;
+    padding: 10px;
+    display: flex;
+}
+
+.comment .comment-profile {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.comment .comment-name {
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+.comment .comment-profile-container {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.comment .comment-content {
+    flex-grow: 5;
+    background: #f1f1f1;
+    width: 86%;
+    padding: 5px 12px;
+    border-radius: 7px;
+}

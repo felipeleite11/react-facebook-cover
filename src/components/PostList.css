@@ -1,0 +1,6 @@
+#post-list {
+    width: 64%;
+    min-height: calc(100vh - 3rem);
+    margin-left: 18%;
+}
+
