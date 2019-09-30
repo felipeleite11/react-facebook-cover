@@ -20,9 +20,26 @@
 }
 
 .post .identification {
-    flex-grow: 40;
+    flex-grow: 50;
     display: flex;
     flex-direction: column;
+}
+
+.post .post-options {
+    flex-grow: 1;
+    padding: 4px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.post .post-options svg {
+    color: #a1a1a1;
+}
+
+.post .post-options svg:hover {
+    cursor: pointer;
+    opacity: .4;
 }
 
 .post .name {

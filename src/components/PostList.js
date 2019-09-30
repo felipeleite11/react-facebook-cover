@@ -1,34 +1,34 @@
 import React, { Component } from 'react'
 
 import './PostList.css'
-import profile from '../assets/profile.jpg'
 
 import Post from './Post'
 
 class PostList extends Component {
-    state = this.props.posts
-
     handleLike = id => {
-      const likedPost = this.state.posts.find(p => p.id === id)
-      likedPost.likes++
-      this.setState({})
+        this.props.onLike(id)
     }
 
     handleDislike = id => {
-      const dislikedPost = this.state.posts.find(p => p.id === id)
-      dislikedPost.dislikes++
-      this.setState({})
+        this.props.onDislike(id)
+    }
+
+    handleRemove = id => {
+        this.props.onRemove(id)
     }
     
     render() {
         return (
             <div id="post-list">
-                {this.state.posts.map(post => 
+                {this.props.data.posts.length === 0 && <p align="center" className="placeholder-post-list">Nenhum post a exibir</p>}
+
+                {this.props.data.posts.map(post => 
                     <Post
                         key={post.id} 
                         post={post}
                         onLike={() => this.handleLike(post.id)}
                         onDislike={() => this.handleDislike(post.id)}
+                        onRemove={() => this.handleRemove(post.id)}
                     />
                 )}
             </div>
